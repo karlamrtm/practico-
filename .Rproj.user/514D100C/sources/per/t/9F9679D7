@@ -3,7 +3,7 @@
     "path": "C:/Users/hp/Desktop/RStudio/OPT Rstudio/practico-1/Quarto.proyect.qmd",
     "project_path": "Quarto.proyect.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "1197857677",
     "contents": "",
     "dirty": false,
     "created": 1710890656985.0,
@@ -15,18 +15,18 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "0,0",
+        "cursorPosition": "9,0",
         "scrollLine": "0",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "rmdVisualModeLocation": "199:0"
+        "rmdVisualModeLocation": "214:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1711168635,
+    "lastKnownWriteTime": 1711169044,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1711168635619,
+    "last_content_update": 1711169044169,
     "read_only": false,
     "read_only_alternatives": []
 }
