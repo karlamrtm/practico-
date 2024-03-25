@@ -7,17 +7,9 @@ format: html
 editor: visual
 ---
 
------#Agregar descripcion del trabajo#
-##Entrega 1 investigacion cuantitativa##
-###Temas a investigar Desigualdad social, estratificación social, justicia distributiva, percepción de desigualdad###
-En la encuesta LAPOP:
-las preguntas sobre inmigración que me interesa usar estan en la pagina 34 desde la IMMIGxA en adelante.
+-----#Agregar descripcion del trabajo# ##Entrega 1 investigacion cuantitativa## ###Temas a investigar Desigualdad social, estratificación social, justicia distributiva, percepción de desigualdad### En la encuesta LAPOP: las preguntas sobre inmigración que me interesa usar estan en la pagina 34 desde la IMMIGxA en adelante.
 
-En el LATINOBAROMETRO:
-Se usan indicadores de opinión pública que miden actitudes, valores y comportamiento
-Percepción de negatividad frente a la llegada de inmigrantes desde LATAM a Chile, en especifico para el caso inmigrantes venezolanos. 
----##variable P32INN en adelante pag 3## 
----
+En el LATINOBAROMETRO: Se usan indicadores de opinión pública que miden actitudes, valores y comportamiento Percepción de negatividad frente a la llegada de inmigrantes desde LATAM a Chile, en especifico para el caso inmigrantes venezolanos. ---##variable P32INN en adelante pag 3## ---
 
 ## Quarto - Protect 1 Opt
 
