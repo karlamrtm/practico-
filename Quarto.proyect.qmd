@@ -1,8 +1,10 @@
 ---
 title: "Primera entrega: Trabajo 1 ptativo Rstudio" 
-"Percepción de la llegada de inmigrantes de nacionalidad venezolana a Chile"
+"Percepción xenofobia ante la llegada de inmigrantes de nacionalidad venezolana a Chile"
 author: "Karla Victoria Medina Retamales"
 Curso: Optativo Rstudio 
+Profesor: Kevin Carrasco Quintanilla
+Ayudante: Javiera 
 format: html
 editor: visual
 ---
