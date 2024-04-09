@@ -1,0 +1,1 @@
+{"frames":[{"func":"load(url(\"https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData\"))","file":"","line_number":0,"end_line_number":0,"character_number":0,"end_character_number":0}],"message":"Error in load(url(\"https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData\")) : \n  cannot read from connection\n"}
