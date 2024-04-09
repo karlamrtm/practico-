@@ -19,7 +19,7 @@ El aumento de los discursos de odio y la xenofobia han sido la tónica de los ul
 
 Esta percepción negativa está ligada a interiorización de discursos xenófobos, racistas que se encuentran en el imaginario colectivo de nuestro país, en el artículo “el otro migrante negro y nosotros el chileno” María Tijux extrae fragmentos de entrevistas en las que se indica la percepción fragmentada que se tiene hacía migrantes racializados, mal llamados “negros”. Existe una caricaturización, exageración de la mirada con la cual se sexualiza, menosprecia, y denigra al otro como sujeto migrante frente al nacional. Una mirada que para la autora tiene su raíz en la propia historia de nuestro país, en la que la negritud es invisibilizada desde la colonia, y en la cual el chileno se percibe como blanco así mismo. Sin duda, esta autopercepción influye en la configuración de la realidad nacional actual, en la cual no solo se esparcen discursos negativos hacia la migración, si no más bien estos se apuntan hacia la migración racializada, pobre, feminizada. Lo que expresa una realidad poco compartida de cuan tolerantes somos frente a otro que es diferente a nosotros mismos.
 
-#Cargar paquetes
+# #Cargar paquetes
 
 ```{r}
 pacman::p_load(sjlabelled,
@@ -34,14 +34,12 @@ pacman::p_load(sjlabelled,
               ggplot2) # Para la mayoría de los gráficos
 ```
 
-#Cargar base de datos
+# #Cargar base de datos
 
 ```{r}
 load(url("https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/latinobarometro_total.RData")) #Cargar base de datos
 load(url("https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData")) #Cargar base de datos
 ```
-
-##Cargar paquetes
 
 ```{r}
 context_data <- wvs %>% group_by(B_COUNTRY) %>% # Agrupar por país
@@ -84,25 +82,29 @@ data$gdp[data$gdp==0] <- NA
 data <- na.omit(data)
 ```
 
-##Visualizaciones
+## ##Visualizaciones
 
 ```{r}
+#| label: tbl-sjmisc 
+#| tbl-cap: “Descriptivos con sjmisc”
 sjmisc::descr(data,
       show = c("label","range", "mean", "sd", "NA.prc", "n"))%>% # Selecciona estadísticos
       kable(.,"markdown") # Esto es para que se vea bien en quarto
 ```
 
+Referencia tabla descriptiva @tbl-sjmisc
+
 ```{r}
+
 view(dfSummary(data, headings=FALSE))
 ```
 
-##Graficos:
+# ##Graficos:
 
-#para el segundo grafico haremos un #\| label: "con diferente nombre" y fig-cap: "titulo del grafico"
+##### #para el segundo grafico haremos un #\| label: "con diferente nombre" y fig-cap: "titulo del grafico diferente"
 
 ```{r}
 #| label: fig-gdp
-
 #| fig-cap: “PIB segun país”
 
 ggplot(data, aes(x = idenpa, y = gdp)) +
@@ -112,4 +114,30 @@ ggplot(data, aes(x = idenpa, y = gdp)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 1))
 ```
 
-Para referenciar el grafico usaremos: @fig-gdp
+#### Para referenciar el grafico usaremos: @fig-gdp
+
+```{r}
+#| label: fig-gdq
+#| fig-cap: “PIB segun país ordenado”
+data_sorted <- data %>% arrange(desc(gdp))
+ggplot(data_sorted, aes(x = factor(idenpa, levels = idenpa), y = gdp)) +
+  geom_point() +
+  labs(x = "País", y = "GDP") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+refencia @fig-gdq
+
+```{r}
+#| label: fig-gpq
+#| fig-cap: “Promedio del PIB según país”
+data %>%
+  ggplot(aes(x = gdp, y = promedio, label = idenpa)) +
+  geom_point() +
+  geom_text(vjust = -0.5) +
+  labs(x = "GDP", y = "Promedio") +
+  theme_bw()
+```
+
+Referencia @fig-gpq

@@ -21,6 +21,40 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 /* CSS for citations */
 div.csl-bib-body { }
 div.csl-entry {
@@ -94,6 +128,214 @@ div.csl-indent {
 <p>Las oleadas de inmigrantes no son un fenómeno nuevo en cuanto a la inmigración en Chile respecta, ya que en décadas anteriores han existido antecedentes sobre oleadas migratorias desde Perú, Bolivia, Haití, y Venezuela, en cuanto a las más nombradas por los medios de comunicación. Las cifras indican que, el oleaje de migrantes que han arribado a nuestro país en los últimos años ha ido en aumento, existiendo en las cifras datos que son relevantes en cuanto a las migraciones sur-sur que se abordan desde Perú, Bolivia, Haití, Colombia, Ecuador, y Venezuela, siendo este el caso central de mi propuesta. A modo de ejemplo, solo durante el año 2021 hubo un total de 56.586 ingresos irregulares, la cifra más alta de ingresos por pasos no habilitados registrada en Chile durante los últimos diez años <span class="citation" data-cites="estrellaaguilarguerraMigracionVenezolanaNorte2023">Estrella Aguilar Guerra, Franco Villalobos Ceballos, and Romina Ramos Rodríguez (<a href="#ref-estrellaaguilarguerraMigracionVenezolanaNorte2023" role="doc-biblioref">2023</a>)</span> . A raíz de la pandemia en 2020 se agudizó la crisis migratoria desde Venezuela, según datos consultados al SERMIG existió un aumento en las Residencias Definitivas otorgadas a personas venezolanas (que pasaron de 14.827 en 2021 a 66.771 en 2022). Siendo este un reflejo del aumento de personas provenientes desde venezuela, teniendo como último destino nuestro país: según datos consultados en el Reporte 2021-2022 del Servicio Nacional de Migraciones. A raíz de este aumento, considero existe un fenómeno nuevo y poco estudiado hasta ahora que es la percepción que se tiene en Chile de los migrantes venezolanos. Como se comportan las relaciones e interacciones entre estos, pensando la realidad en torno a los discursos de odio difundidos en redes sociales y expresados hacía personas de nacionalidad venezolana que residen en nuestro país. Mediante la revisión de variables extraídas de la encuesta LAPOP, que indagan sobre los niveles de satisfacción o insatisfacción respecto a la entrega de servicios sociales de parte del Estado a personas migrantes. Este debate público remite a discursos difundidos en redes sociales que pregonan que “El Estado le quitará la casa a nacionales para entregárselas a familias migrantes que se encuentran sin hogar” o el rumor extendido de qué personas migrantes tienen más acceso a subsidios de vivienda que no migrantes”. Por lo cual, medir la percepción de la migración que se tiene en Chile hacía migrantes venezolanos contribuye a esclarecer si esta es una percepción negativa en cuanto a los chilenos respecta, dado el aumento y las diferencias culturales acontecidas en los últimos años. <span class="citation" data-cites="juancarlosrodrigueztorrentMigracionChileNeoliberal2023">Juan Carlos Rodríguez Torrent and Rodrigo Vargas Callegari (<a href="#ref-juancarlosrodrigueztorrentMigracionChileNeoliberal2023" role="doc-biblioref">2023</a>)</span>.</p>
 <p>El aumento de los discursos de odio y la xenofobia han sido la tónica de los ultimos meses en los medios de comunicación. La percepción o posible llegada que tengan los medios con estos discursos influye en la percepción que tienen las personas con respecto a los inmigrantes <span class="citation" data-cites="nairbisdesireesibriandiazEstrategiasDesinformativasSobre2023">Nairbis Desirée Sibrian Díaz, Neida Josefina Colmenares Mejías, and Juan Carlos Núñez Silva (<a href="#ref-nairbisdesireesibriandiazEstrategiasDesinformativasSobre2023" role="doc-biblioref">2023</a>)</span> algunas de las conversaciones en cátedra del curso migraciones, una mirada interseccional comentan que el aumento de la percepción negativa de migrantes en Chile tiene su fundamento en problemas estructurales de nuestro país. Por lo cual los discursos de odio hacia personas de nacionalidad venezolana serían utilizados como un chivo expiatorio, hacia problemas de caracter nacional como aumento del desempleo, la crisis en seguridad, vivienda, acceso a la salud pública, y a la educación pública. Si bien una investigación más amplia podría abordar todos estos fénomenos, en este caso nos limitaremos a hacer una investigación a partir de una revisión de discursos de odio esparcidos en los medios de comunicación y las redes sociales, así como informes y reportes del Estado que den cuenta de las estadísticas y tasas reales de acceso a beneficios del Estado a las que cuentan las personas migrantes. Es posible plantear que los discursos de odio radican en la otredad, pensarnos como superiores moral y políticamente deja al otro en un puesto de jerarquización hacia abajo, en el cual no lo vemos como igual, sino como un otro extraño o inferior a nosotros mismos. Esto fomentaría una percepción negativa de la llegada de migrantes venezolanos a Chile, sin tomar en consideración los beneficios que esto podría conllevar para el país, como por ejemplo el aumento de trabajadores en edad laboral, o trabajadores en puestos de trabajo que ya no quieren ser tomados por los mismos nacionales.</p>
 <p>Esta percepción negativa está ligada a interiorización de discursos xenófobos, racistas que se encuentran en el imaginario colectivo de nuestro país, en el artículo “el otro migrante negro y nosotros el chileno” María Tijux extrae fragmentos de entrevistas en las que se indica la percepción fragmentada que se tiene hacía migrantes racializados, mal llamados “negros”. Existe una caricaturización, exageración de la mirada con la cual se sexualiza, menosprecia, y denigra al otro como sujeto migrante frente al nacional. Una mirada que para la autora tiene su raíz en la propia historia de nuestro país, en la que la negritud es invisibilizada desde la colonia, y en la cual el chileno se percibe como blanco así mismo. Sin duda, esta autopercepción influye en la configuración de la realidad nacional actual, en la cual no solo se esparcen discursos negativos hacia la migración, si no más bien estos se apuntan hacia la migración racializada, pobre, feminizada. Lo que expresa una realidad poco compartida de cuan tolerantes somos frente a otro que es diferente a nosotros mismos.</p>
+</section>
+</section>
+<section id="cargar-paquetes" class="level1">
+<h1>#Cargar paquetes</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>pacman<span class="sc">::</span><span class="fu">p_load</span>(sjlabelled,</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>               dplyr, <span class="co">#Manipulacion de datos</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>              stargazer, <span class="co">#Tablas</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>              sjmisc, <span class="co"># Tablas</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>              summarytools, <span class="co"># Tablas</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>              kableExtra, <span class="co">#Tablas</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>              sjPlot, <span class="co">#Tablas y gráficos</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>              corrplot, <span class="co"># Correlaciones</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>              sessioninfo, <span class="co"># Información de la sesión de trabajo</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>              ggplot2) <span class="co"># Para la mayoría de los gráficos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+</section>
+<section id="cargar-base-de-datos" class="level1">
+<h1>#Cargar base de datos</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="fu">url</span>(<span class="st">"https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/latinobarometro_total.RData"</span>)) <span class="co">#Cargar base de datos</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">load</span>(<span class="fu">url</span>(<span class="st">"https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData"</span>)) <span class="co">#Cargar base de datos</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb3"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>context_data <span class="ot">&lt;-</span> wvs <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(B_COUNTRY) <span class="sc">%&gt;%</span> <span class="co"># Agrupar por país</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">gdp =</span> <span class="fu">mean</span>(GDPpercap1, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="co"># Promedio de GDP per capita</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>         <span class="at">life_exp =</span> <span class="fu">mean</span>(lifeexpect, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), <span class="co"># Promedio esperanza de vida</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>         <span class="at">gini =</span> <span class="fu">mean</span>(giniWB, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="sc">%&gt;%</span>  <span class="co"># Promedio gini</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rename</span>(<span class="at">idenpa=</span>B_COUNTRY) <span class="co"># Para poder vincular ambas bases, es necesario que la variable de identificación se llamen igual</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>context_data<span class="sc">$</span>idenpa <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(context_data<span class="sc">$</span>idenpa) <span class="co"># Como era categórica, la dejamos numérica</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a>proc_data <span class="ot">&lt;-</span> proc_data <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(idenpa) <span class="sc">%&gt;%</span>  <span class="co"># agrupamos por país</span></span>
+<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(<span class="at">promedio =</span> <span class="fu">mean</span>(conf_inst, <span class="at">na.rm =</span> <span class="cn">TRUE</span>)) <span class="co"># promedio de confianza en instituciones por país</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">merge</span>(proc_data, context_data, <span class="at">by=</span><span class="st">"idenpa"</span>)</span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">idenpa =</span> <span class="fu">as.character</span>(idenpa)) <span class="sc">%&gt;%</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">idenpa =</span> <span class="fu">case_when</span>(</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"32"</span> <span class="sc">~</span> <span class="st">"Argentina"</span>,</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"68"</span> <span class="sc">~</span> <span class="st">"Bolivia"</span>,</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"76"</span> <span class="sc">~</span> <span class="st">"Brasil"</span>,</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"152"</span> <span class="sc">~</span> <span class="st">"Chile"</span>,</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"170"</span> <span class="sc">~</span> <span class="st">"Colombia"</span>,</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"188"</span> <span class="sc">~</span> <span class="st">"Costa Rica"</span>,</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"214"</span> <span class="sc">~</span> <span class="st">"Cuba"</span>,</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"218"</span> <span class="sc">~</span> <span class="st">"República Dominicana"</span>,</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"222"</span> <span class="sc">~</span> <span class="st">"Ecuador"</span>,</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"320"</span> <span class="sc">~</span> <span class="st">"El Salvador"</span>,</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"340"</span> <span class="sc">~</span> <span class="st">"Guatemala"</span>,</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"484"</span> <span class="sc">~</span> <span class="st">"Honduras"</span>,</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"558"</span> <span class="sc">~</span> <span class="st">"México"</span>,</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"591"</span> <span class="sc">~</span> <span class="st">"Nicaragua"</span>,</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"600"</span> <span class="sc">~</span> <span class="st">"Panamá"</span>,</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"604"</span> <span class="sc">~</span> <span class="st">"Paraguay"</span>,</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"858"</span> <span class="sc">~</span> <span class="st">"Uruguay"</span>,</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    idenpa <span class="sc">==</span> <span class="st">"862"</span> <span class="sc">~</span> <span class="st">"Venezuela"</span>))</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>gdp <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(data<span class="sc">$</span>gdp)</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>data<span class="sc">$</span>gdp[data<span class="sc">$</span>gdp<span class="sc">==</span><span class="dv">0</span>] <span class="ot">&lt;-</span> <span class="cn">NA</span></span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>data <span class="ot">&lt;-</span> <span class="fu">na.omit</span>(data)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<section id="visualizaciones" class="level2">
+<h2 class="anchored" data-anchor-id="visualizaciones">##Visualizaciones</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>sjmisc<span class="sc">::</span><span class="fu">descr</span>(data,</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>      <span class="at">show =</span> <span class="fu">c</span>(<span class="st">"label"</span>,<span class="st">"range"</span>, <span class="st">"mean"</span>, <span class="st">"sd"</span>, <span class="st">"NA.prc"</span>, <span class="st">"n"</span>))<span class="sc">%&gt;%</span> <span class="co"># Selecciona estadísticos</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>      <span class="fu">kable</span>(.,<span class="st">"markdown"</span>) <span class="co"># Esto es para que se vea bien en quarto</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="tbl-sjmisc" class="anchored">
+<table class="table table-sm table-striped small">
+<caption>Table&nbsp;1: “Descriptivos con sjmisc”</caption>
+<colgroup>
+<col style="width: 3%">
+<col style="width: 10%">
+<col style="width: 10%">
+<col style="width: 3%">
+<col style="width: 8%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: left;"></th>
+<th style="text-align: left;">var</th>
+<th style="text-align: left;">label</th>
+<th style="text-align: right;">n</th>
+<th style="text-align: right;">NA.prc</th>
+<th style="text-align: right;">mean</th>
+<th style="text-align: right;">sd</th>
+<th style="text-align: left;">range</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">promedio</td>
+<td style="text-align: left;">promedio</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">3.40077</td>
+<td style="text-align: right;">1.016976</td>
+<td style="text-align: left;">3.59 (2.3-5.9)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">gdp</td>
+<td style="text-align: left;">gdp</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">15528.18364</td>
+<td style="text-align: right;">6480.045512</td>
+<td style="text-align: left;">19523.79 (5631.2-25154.99)</td>
+</tr>
+<tr class="odd">
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">life_exp</td>
+<td style="text-align: left;">life_exp</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">75.90909</td>
+<td style="text-align: right;">2.286593</td>
+<td style="text-align: left;">8.8 (71.24-80.04)</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">gini</td>
+<td style="text-align: left;">gini</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">45.46364</td>
+<td style="text-align: right;">4.156266</td>
+<td style="text-align: left;">14.2 (39.7-53.9)</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<p>Referencia tabla descriptiva <a href="#tbl-sjmisc">Table&nbsp;1</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">view</span>(<span class="fu">dfSummary</span>(data, <span class="at">headings=</span><span class="cn">FALSE</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Switching method to 'browser'</code></pre>
+</div>
+<div class="cell-output cell-output-stderr">
+<pre><code>Output file written: C:\Users\hp\AppData\Local\Temp\RtmpQzER5I\file1f28165b58ac.html</code></pre>
+</div>
+</div>
+</section>
+</section>
+<section id="graficos" class="level1">
+<h1>##Graficos:</h1>
+<section id="para-el-segundo-grafico-haremos-un-label-con-diferente-nombre-y-fig-cap-titulo-del-grafico-diferente" class="level5">
+<h5 class="anchored" data-anchor-id="para-el-segundo-grafico-haremos-un-label-con-diferente-nombre-y-fig-cap-titulo-del-grafico-diferente">#para el segundo grafico haremos un #| label: “con diferente nombre” y fig-cap: “titulo del grafico diferente”</h5>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data, <span class="fu">aes</span>(<span class="at">x =</span> idenpa, <span class="at">y =</span> gdp)) <span class="sc">+</span></span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"País"</span>, <span class="at">y =</span> <span class="st">"Gdp"</span>) <span class="sc">+</span></span>
+<span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>()<span class="sc">+</span></span>
+<span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-gdp" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Quarto.proyect_files/figure-html/fig-gdp-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;1: “PIB segun país”</figcaption>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="para-referenciar-el-grafico-usaremos-fig-gdp" class="level4">
+<h4 class="anchored" data-anchor-id="para-referenciar-el-grafico-usaremos-fig-gdp">Para referenciar el grafico usaremos: <a href="#fig-gdp">Figure&nbsp;1</a></h4>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb10"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a>data_sorted <span class="ot">&lt;-</span> data <span class="sc">%&gt;%</span> <span class="fu">arrange</span>(<span class="fu">desc</span>(gdp))</span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ggplot</span>(data_sorted, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">factor</span>(idenpa, <span class="at">levels =</span> idenpa), <span class="at">y =</span> gdp)) <span class="sc">+</span></span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"País"</span>, <span class="at">y =</span> <span class="st">"GDP"</span>) <span class="sc">+</span></span>
+<span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_minimal</span>() <span class="sc">+</span></span>
+<span id="cb10-6"><a href="#cb10-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.text.x =</span> <span class="fu">element_text</span>(<span class="at">angle =</span> <span class="dv">45</span>, <span class="at">hjust =</span> <span class="dv">1</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-gdq" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Quarto.proyect_files/figure-html/fig-gdq-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;2: “PIB segun país ordenado”</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>refencia <a href="#fig-gdq">Figure&nbsp;2</a></p>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb11"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a>data <span class="sc">%&gt;%</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x =</span> gdp, <span class="at">y =</span> promedio, <span class="at">label =</span> idenpa)) <span class="sc">+</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>() <span class="sc">+</span></span>
+<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_text</span>(<span class="at">vjust =</span> <span class="sc">-</span><span class="fl">0.5</span>) <span class="sc">+</span></span>
+<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x =</span> <span class="st">"GDP"</span>, <span class="at">y =</span> <span class="st">"Promedio"</span>) <span class="sc">+</span></span>
+<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div id="fig-gpq" class="quarto-figure quarto-figure-center anchored">
+<figure class="figure">
+<p><img src="Quarto.proyect_files/figure-html/fig-gpq-1.png" class="img-fluid figure-img" width="672"></p>
+<figcaption class="figure-caption">Figure&nbsp;3: “Promedio del PIB según país”</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<p>Referencia <a href="#fig-gpq">Figure&nbsp;3</a></p>
 
 </section>
 </section>
