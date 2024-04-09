@@ -1,0 +1,4 @@
+[1,"==> quarto preview Quarto.proyect.qmd --to html --no-watch-inputs --no-browse\n\n"]
+[1,"\r\n\r\nprocessing file: Quarto.proyect.qmd\r\n"]
+[1,"\r  |                                                          \r  |                                                    |   0%\r  |                                                          \r  |...                                                 |   7%                  \r  |                                                          \r  |.......                                             |  13% [unnamed-chunk-1]"]
+[1,"\r  |                                                          \r  |..........                                          |  20%                  \r  |                                                          \r  |..............                                      |  27% [unnamed-chunk-2]"]

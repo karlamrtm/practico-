@@ -39,9 +39,9 @@ pacman::p_load(sjlabelled,
 ```{r}
 load(url("https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/latinobarometro_total.RData")) #Cargar base de datos
 load(url("https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData")) #Cargar base de datos
-
-
 ```
+
+##Cargar paquetes
 
 ```{r}
 context_data <- wvs %>% group_by(B_COUNTRY) %>% # Agrupar por país
@@ -54,3 +54,62 @@ context_data$idenpa <- as.numeric(context_data$idenpa) # Como era categórica, l
 proc_data <- proc_data %>% group_by(idenpa) %>%  # agrupamos por país
   summarise(promedio = mean(conf_inst, na.rm = TRUE)) # promedio de confianza en instituciones por país
 ```
+
+```{r}
+data <- merge(proc_data, context_data, by="idenpa")
+data <- data %>%
+  mutate(idenpa = as.character(idenpa)) %>%
+  mutate(idenpa = case_when(
+    idenpa == "32" ~ "Argentina",
+    idenpa == "68" ~ "Bolivia",
+    idenpa == "76" ~ "Brasil",
+    idenpa == "152" ~ "Chile",
+    idenpa == "170" ~ "Colombia",
+    idenpa == "188" ~ "Costa Rica",
+    idenpa == "214" ~ "Cuba",
+    idenpa == "218" ~ "República Dominicana",
+    idenpa == "222" ~ "Ecuador",
+    idenpa == "320" ~ "El Salvador",
+    idenpa == "340" ~ "Guatemala",
+    idenpa == "484" ~ "Honduras",
+    idenpa == "558" ~ "México",
+    idenpa == "591" ~ "Nicaragua",
+    idenpa == "600" ~ "Panamá",
+    idenpa == "604" ~ "Paraguay",
+    idenpa == "858" ~ "Uruguay",
+    idenpa == "862" ~ "Venezuela"))
+
+data$gdp <- as.numeric(data$gdp)
+data$gdp[data$gdp==0] <- NA
+data <- na.omit(data)
+```
+
+##Visualizaciones
+
+```{r}
+sjmisc::descr(data,
+      show = c("label","range", "mean", "sd", "NA.prc", "n"))%>% # Selecciona estadísticos
+      kable(.,"markdown") # Esto es para que se vea bien en quarto
+```
+
+```{r}
+view(dfSummary(data, headings=FALSE))
+```
+
+##Graficos:
+
+#para el segundo grafico haremos un #\| label: "con diferente nombre" y fig-cap: "titulo del grafico"
+
+```{r}
+#| label: fig-gdp
+
+#| fig-cap: “PIB segun país”
+
+ggplot(data, aes(x = idenpa, y = gdp)) +
+  geom_point() +
+  labs(x = "País", y = "Gdp") +
+  theme_minimal()+
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
+```
+
+Para referenciar el grafico usaremos: @fig-gdp
