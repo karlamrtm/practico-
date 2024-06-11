@@ -1,0 +1,11 @@
+"0","proc_data_original <- proc_data_original %>%
+  rowwise() %>%
+  mutate(confianza = sum(c(sexo, edad), na.rm = TRUE))
+proc_data_original <- proc_data_original %>%
+  rowwise() %>%
+  mutate(confianza = sum(c(sexo, edad), na.rm = TRUE))
+ggpairs(proc_data_original)
+"
+"2","Error in UseMethod(""depth"") : 
+  no applicable method for 'depth' applied to an object of class ""NULL""
+"

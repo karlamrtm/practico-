@@ -1,0 +1,32 @@
+{
+    "entries": [
+        {
+            "file": "Quarto.proyect.qmd",
+            "type": "fig",
+            "id": "gdq",
+            "suffix": "",
+            "title": "“Percepción de la confianza en la migración en Chile por edad”"
+        },
+        {
+            "file": "Quarto.proyect.qmd",
+            "type": "fig",
+            "id": "gpq",
+            "suffix": "",
+            "title": "“Promedio del PIB según país”"
+        },
+        {
+            "file": "Quarto.proyect.qmd",
+            "type": "tbl",
+            "id": "sjmisc",
+            "suffix": "",
+            "title": "“Tabla 1\" \"Estadisticos Descriptivos”"
+        },
+        {
+            "file": "Quarto.proyect.qmd",
+            "type": "fig",
+            "id": "gdpu",
+            "suffix": "",
+            "title": "“Percepción de la confianza en inmigrantes en Chile”"
+        }
+    ]
+}

@@ -1,6 +1,0 @@
-"0","load(url(""https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData"")) #Cargar base de datos
-"
-"2","Warning: URL 'https://raw.githubusercontent.com/Kevin-carrasco/R-data-analisis/main/files/data/data_wvs.RData': Timeout of 60 seconds was reached"
-"2","Error in load(url(""https://github.com/Kevin-carrasco/R-data-analisis/raw/main/files/data/data_wvs.RData"")) : 
-  cannot read from connection
-"
