@@ -1,0 +1,67 @@
+---
+title: "Percepciónes sobre la Migración"
+author: "Karla Medina Retamales"
+format: 
+  revealjs:
+    slideNumber: true # Número de slide abajo a la derecha
+    theme: solarized
+editor: visual
+---
+
+# Introducción
+
+Esta es una introducción de ejemplo (breve resumen de la investigación)
+
+# Descriptivos
+
+::: columns
+::: {.column width="50%"}
+La variable principal es (Columna izquierda)
+:::
+
+::: {.column width="50%"}
+Revisar incorporación de graficos y tablas Que se ve afectada por otras variables (Columna derecha)
+:::
+:::
+
+## Analisis
+
+(desarrollo de principales hallazgos) Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+
+## Correlacional- correlaciones
+
+(presentación de correlacional o estadisticos bivariados)
+
+When you click the **Render** button a document will be generated that includes:
+
+-   Content authored with markdown
+-   Output from executable code
+
+## Regresiones
+
+When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
+
+## Resultados
+
+::: incremental
+-   En esta investigación quisimos demostrar...
+-   Nuestros principales resultados indican que...
+:::
+
+## Conclusiones
+
+::: incremental
+-   En esta investigación quisimos demostrar...
+-   Nuestros principales resultados indican que...
+:::
+
+## Final de la presentación - ajustes y arreglos
+
+https://r-data-analisis.netlify.app/practicos/10-content#quarto-presentations
+
+-   Posibles temas solarized; serif;night;moon;
+-   Para agregar la bibliografía: bibliography: \# Agregar nuestra bibliografía link-citations: TRUE \# Que la bibliografía tenga links automaticos
+
+```{r}
+1 + 1
+```
