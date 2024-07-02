@@ -1,0 +1,134 @@
+---
+title: "Percepciónes e imaginarios de la migración ante inmigrantes de nacionalidad peruana, haitiana y venezolana a Chile"
+author: Karla Victoria Medina Retamales
+format: html
+editor: visual
+bibliography: Migraciones.bib
+link-citations: true
+---
+
+# **“**Percepciónes e imaginarios de la migración ante inmigrantes de nacionalidad peruana, haitiana y venezolana a Chile**”**
+
+## **Introducción:**
+
+En los últimos años ha crecido exponencialmente la llegada de inmigrantes a nuestro país, desde diferentes países de América Latina, y a partir de la Pandemia covid-19, la ola migratoria tomo más fuerza y comenzó a sobreponerse como una problemática a nivel nacional. Frente a este nuevo fenómeno migratorio, es necesario pensar, ¿Cómo los chilenos abordan, y observan la llegada de migrantes al país? Pensando en los inmigrantes de nacionalidades Peruana, Haitiana y Venezolana que han llegado a nuestro país. Los estudios respecto a la migración internacional en Chile han sido abordados desde diferentes perspectivas, siendo el racismo, la discriminación, y el rol del Estado, las principales líneas de investigación [@maharasleimanmora2023]. Haciendo un recorrido bibliográfico nos encontramos con preguntas acerca de los inmigrantes que van desde: sí deberían mantener sus costumbres; si aportan con sus costumbres al país; o si son un aporte a la economía nacional. Estas son algunas de las perspectivas que se abordan en investigaciones; centros de estudio acerca del conflicto y la cohesión social como el COES, tienen módulos que apuntan a recopilar información acerca de las opiniones que tienen los chilenos acerca de este fenómeno. Para los objetivos de este trabajo analizaremos variables que apuntan a considerar los valores de confianza en la inmigración, grados de acuerdo diferentes afirmaciones en contra de la migración. Codificando estas como indicadores de medición de la percepción y los perjuicios en torno al tema. El objetivo es analizar cuál es el grado de acuerdo con afirmaciones que reproducen discursivas en contra del fenómeno migratorio en el país, como “Chile pierde su identidad con la llegada de inmigrantes”, y “Aumenta el desempleo con la llegada de inmigrantes al país”, y a partir de ello analizar ¿cuál es perfil que reproduce estas narrativas, es decir, quienes son y cómo se expresan los ciudadanos sobre la inmigración? Para contextualizar, las oleadas de inmigrantes no son un fenómeno nuevo en Chile, ya que, en décadas anteriores han existido antecedentes sobre oleadas migratorias desde Perú, Bolivia, Haití, y Venezuela. Algunas cifras indican que, el oleaje de migrantes que han arribado a nuestro país en los últimos años ha ido en un aumento exponencial; existiendo en las cifras datos que son relevantes en cuanto a las migraciones en el eje sur-sur. Que se abordan desde Bolivia, Colombia, Ecuador, Perú, Haití, y Venezuela, siendo estos últimos el caso central de mi propuesta. Solo durante el año 2021 hubo un total de 56.586 ingresos irregulares, la cifra más alta de ingresos por pasos no habilitados registrada en Chile durante los últimos diez años [@estrellaaguilarguerraMigracionVenezolanaNorte2023]. Por lo que es necesario indagar como estos cambios sociodemográficos impactan en la visión que se tiene acerca de la migración. En 2020 se agudizó la crisis migratoria desde Venezuela, según datos consultados al Servicio Nacional de Migraciones (SERMIG) existió un aumento en las Residencias Definitivas (RD) otorgadas a personas venezolanas (que pasaron de 14.827 en 2021 a 66.771 en 2022). Siendo este un reflejo del aumento de personas provenientes desde Venezuela, teniendo como último destino nuestro país: según datos consultados en el Reporte 2021-2022 del Servicio Nacional de Migraciones. A raíz de este aumento, considero existe un fenómeno nuevo muy poco estudiado hasta ahora que es la percepción que se tiene en Chile de los migrantes Latinoamericanos en particular. El estudio del COES nos permite estudiar cómo se comportan las relaciones e interacciones entre estos; pensando la realidad en torno a los perjuicios y discursos de odio difundidos en redes sociales, y expresadas en medios de comunicación hacía personas de nacionalidad venezolana, peruana y haitiana que residen en nuestro país. Este debate público remite a discursos difundidos en redes sociales que divulgan “el Estado le quitará la casa a nacionales para entregárselas a familias migrantes que se encuentran sin hogar” o “qué personas migrantes tienen más acceso a servicios del Estado que no-migrantes”. Por lo cual, hacer una revisión de la percepción de los migrantes que se tiene en Chile; contribuye a esclarecer si esta es una percepción negativa en cuanto a los chilenos, dado el aumento de la migración sur-sur y las diferencias culturales acontecidas en los últimos años. [@juancarlosrodrigueztorrentMigracionChileNeoliberal2023]. El aumento sostenido de los discursos de odio, y la xenofobia han sido la tónica de los últimos meses en los medios de comunicación. La prensa en términos generales contribuye a generar una percepción negativa hacía los inmigrantes ante las diferencias culturales, étnico y raciales, entre quienes llegan al país y quienes son residentes. La posible llegada que tengan los medios de comunicación con sectores más conservadores de la sociedad, que tienen relación con estos discursos que fomentan la discriminación y segregación de la población migrante en el país, influiría en una creciente percepción negativa que tienen las personas con respecto a los inmigrantes [@nairbisdesireesibriandiazEstrategiasDesinformativasSobre2023]. Esta percepción negativa está ligada a la interiorización de discursos xenófobos, y racistas que se encuentran en el imaginario colectivo de nuestro país, en el artículo “el otro migrante negro y nosotros el chileno” de la Socióloga María Tijoux extrae fragmentos de entrevistas en las que se indica la percepción fragmentada que se tiene hacía migrantes racializados, mal llamados “negros”. Existe una caricaturización y exageración de los otros, con la cual se menosprecia, denigra y sexualiza (en el caso de las mujeres) y al otro como sujeto migrante frente al ciudadano nacional. Una mirada que para la autora tiene su raíz en la propia historia de nuestro país, en la que la negritud es invisibilidad desde la colonia, y en la cual "el chileno" se percibe así mismo como “blanco”. Sin duda, esta autopercepción influye en la configuración de la realidad nacional actual, en la cual no solo se esparcen discursos negativos: racistas y xenófobos hacia la migración, sino más bien estos se apuntan hacia las migraciones latinoamericanas, racializadas, pobres, y feminizadas. Lo que expresaría es una realidad compartida de cuan tolerantes somos como país frente a un otro, que es ajeno, y diferente a lo que consideramos somos nosotros mismos y nuestra identidad nacional.
+
+# Cargar paquetes 
+```{r}
+pacman::p_load(haven,
+               texreg,
+               dplyr, 
+               sjmisc, 
+               car, 
+               sjlabelled, 
+               stargazer, 
+               haven, 
+               sjPlot, 
+               ggplot2, 
+               psych, 
+               kableExtra, 
+               corrplot)
+```
+
+
+# Cargar base de datos
+```{r}
+load("C:/Users/hp/Desktop/Rstudio/practico-1/elsoc2016.rdata")
+
+```
+
+# Visualización de variables: estadisticos descriptivos
+```{r}
+#| label: tbl-sjmisc
+#| tbl-cap: “Tabla 1" "Estadisticos Descriptivos”
+
+sjmisc::descr(proc_data,
+              show = c("label","range", "mean", "sd", "NA.prc", "n"))%>%
+  kable(.,"markdown")
+
+```
+referencia tabla 1: @tbl-sjmisc.
+
+## Operacionalización de variables
+```{r}
+
+```
+
+#Agregar tabla de operacionalización de variables 
+
+En la tabla anterior podemos observar las variables que se utilizaran para esta investigación, estas son "confianza en inmigrantes" (conf_inmigr), "Chile pierde su identidad con la llegada de inmigrantes" (pier_ident_chi), "aumenta el desempleo con la llegada de inmigrantes" (aumenta_desempleo), "identificación con la clase social subjetiva" (#iden_clase variable que quiero eliminar#),  "nivel educacional" (nivel_educacional), "sexo" y "edad". En esta ocasión decidimos eliminar los casos perdidos debido a que las variables no se encontraban en todas las olas que ha realizado ELSOC, por lo que trabajaremos con 6.938 casos,y un 100% de los valores validos para las variables seleccionadas anteriormente. Las variables han sido recodificadas en valores entre 0 y 4 en ellas se expresa 
+- Confianza en los inmigrantes: al menos un 34% de los encuestados declara tener algo de confianza en la migración, mientras que solo un 5% declara tener bastante confianza. 
+- Para la variable "Chile pierde su identidad" existe una distribución binaria de las respuestas, porque un 37% declara no estar de acuerdo con la afirmación, mientras que un 33% declara estar de acuerdo con que Chile pierde su identidad con la llegada de inmigrantes. 
+En cuanto a la variable "Aumenta el desempleo con la llegada de inmigrantes el caso es diferente ya que un 53% de los encuestados afirma estar de acuerdo o totalmente de acuerdo con la afirmación de que aumenta el desempleo con la llegada de inmigrantes.
+
+# Graficos univariados 
+```{r}
+#| label: fig-gra_acu
+#| fig-cap: “Indicadores de confianza con la inmigración”
+graph2 <- sjPlot::plot_stackfrq(dplyr::select(proc_data, conf_inmigr,
+                                              pier_ident_chi,
+                                              aumenta_desempleo),
+                                title = "Indicadores de confianza con la inmigración") +
+  theme(legend.position="bottom")
+
+graph2
+
+```
+
+```{r}
+#| label: fig-gra_asocio
+#| fig-cap: “Edad”
+graph4 <- ggplot(proc_data, aes(x = as.numeric(edad))) +
+  geom_histogram(binwidth=0.6, colour="black", fill="coral") +
+  theme_bw() +
+  xlab("Edad") +
+  ylab("Cantidad")
+
+graph4
+
+```
+
+# Estimacion de correlaciones
+```{r}
+proc_datacor <- proc_data %>% select(conf_inmigr, pier_ident_chi, aumenta_desempleo, iden_clase, nivel_educacional, sexo, edad)%>%
+  mutate_all(~(as.numeric(.)))
+sjmisc::descr(proc_datacor,
+              show = c("label","range", "mean", "sd", "NA.prc", "n")) %>%
+  kable(.,"markdown")
+
+M <- cor(proc_datacor, use = "complete.obs")
+M
+
+sjPlot::tab_corr(proc_datacor, 
+                 triangle = "lower")
+sjPlot::tab_corr(proc_datacor, 
+                 na.deletion = "pairwise", # espeficicamos tratamiento NA
+                 triangle = "lower")
+corrplot.mixed(M)
+```
+
+## Estimación de modelos de regresión
+```{r results='asis'} 
+proc_datacor <- proc_datacor %>%
+  rowwise() %>%
+  mutate(prejuicio = sum(pier_ident_chi, aumenta_desempleo))
+
+fit01<- lm(prejuicio~iden_clase,data=proc_datacor)
+fit02<- lm(prejuicio~nivel_educacional ,data=proc_datacor)
+fit03<- lm(prejuicio~sexo,data=proc_datacor)
+fit04<- lm(prejuicio~edad,data=proc_datacor)
+fit05<- lm(prejuicio~nivel_educacional+iden_clase,data=proc_datacor)
+fit06<- lm(prejuicio~sexo+edad,data=proc_datacor)
+
+knitreg(list(fit01, fit02,fit03))
+knitreg(list(fit01, fit02,fit03, fit04, fit05, fit06))
+
+```
+
+
+## Conclusiones Finales
+
+Conclusiones preliminares del trabajo:
+ Es posible plantear a través de la bibliografía consultada que los discursos de odio radican en la otredad, pensarnos como superiores, moral y políticamente deja al otro en un puesto de jerarquización hacia abajo, en el cual no es observado como igual, sino como un otro ajeno, extraño, o inferior a nosotros. Esto tendería a fomentar una percepción negativa de la llegada de migrantes venezolanos a Chile. Sin tomar en consideración los beneficios que esto podría conllevar para el país, como por ejemplo el aumento de trabajadores en edad laboral, o trabajadores en puestos de trabajo que ya no quieren ser tomados por los mismos nacionales, aumento de la natalidad, diversificación cultural.
+A raíz de algunas conversaciones en cátedra del curso migraciones: desde una mirada interseccional comentan que el aumento de la percepción negativa hacía los migrantes en Chile tiene su fundamento en visones sesgados y promovidas por medios de comunicación que apuntan a señalar a los problemas estructurales de nuestro país, como problemas que suceden principalmente por la llegada de nuevos migrantes. Ejemplo de esto es, aumento en la delincuencia, aumento en los niveles de inseguridad en las calles, disminución de ofertas laborales, entre algunas. Dado esto, considero que los discursos de odio hacia personas de nacionalidad principalmente venezolana serían utilizados como una suerte de chivo expiatorio en nuestro país, hacia problemas de carácter estructural como «aumento del desempleo», «la crisis en seguridad», «la crisis de vivienda», «acceso a la salud pública», y «acceso a la educación pública». Si bien una investigación más amplia podría abordar todos estos fenómenos y las percepciones que tienen tanto ciudadanos locales como ciudadanos extranjeros en el país. En este caso nos limitaremos a hacer una investigación a partir de una revisión de 2 indicadores de percepción de perjuicios presentes en la población encuestada.
+

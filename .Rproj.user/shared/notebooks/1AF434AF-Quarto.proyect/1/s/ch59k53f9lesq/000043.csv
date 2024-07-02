@@ -1,6 +1,0 @@
-"0","#| label: tbl-sjmisc"
-"0","#| tbl-cap: “Tabla 1"" ""Estadisticos Descriptivos”"
-"0",""
-"0","sjmisc::descr(proc_data,"
-"0","              show = c(""label"",""range"", ""mean"", ""sd"", ""NA.prc"", ""n""))%>%"
-"0","  kable(.,""markdown"")"
