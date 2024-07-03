@@ -124,11 +124,11 @@ M
 
 sjPlot::tab_corr(proc_datacor, 
                  triangle = "lower")
-sjPlot::tab_corr(proc_datacor, 
-                 na.deletion = "pairwise", # espeficicamos tratamiento NA
-                 triangle = "lower")
+
 corrplot.mixed(M)
 ```
+
+La estimación de correlaciones de esta investigación indica asociación negativa y positiva entre las variables. En ellas podemos observar una asociación que demuestra que la variable confianza en la inmigración se ve afectada por las demás variables, tanto las que seleccionamos como variables de perjuicio, como las variables sociodemograficas. Si bien no se logro hacer una estimación contundente de las caracteristicas sociodemograficas que tienen quienes desconfian en los inmigrantes, logramos indentificar algunos indicadores relevantes para la investigación. En cuanto a la variable de confianza en inmigrantes, existe una correlación negativa en las variables de perjuicio y edad, con un valor p<0,001***. Existe una asociación positiva entre las variables chile pierde identidad y aumenta desempleo, asimismo se observa una correlación positiva entre quienes tienen mayor escolaridad, es decir, cuentan con estudios de educación superior y postgrados. En tanto la variable de confianza en la inmigración cuenta con una correlación negativa con las variables Chile pierde identidad con un valor de -0.36, y aumenta el desempleo con -0.34; la variable identificación clase social no presenta correlaciones con las demás variables, por lo que no será utilizada para las conclusiones finales. En tanto las variables sociodemograficas de edad, sexo y nivel educacional, demuestran ser significativas para la investigación, ya que nos permiten observar variabilidad en los estadisticos graficados. La edad se correlaciona negativamente con el nivel educacional en -0.37 puntos, mientras que demuestra un leve correlación positiva con las variables de perjuicio, por tanto a medida que aumenta la edad existirian mayores niveles de acuerdo con las variables que seleccionamos como indicadores de perjuicios.   
 
 ## **Estimación de modelos de regresión**
 ```{r results='asis'} 
@@ -147,6 +147,14 @@ knitreg(list(fit01, fit02, fit03, fit04, fit05, fit06))
 
 ```
 
+A raíz de los resultados podemos observar que existe un efecto estadisticamente significativo entre 
+
+Modelo 1
+Modelo 2
+Modelo 3
+Modelo 4
+Modelo 5
+Modelo 6
 
 # **Conclusiones Finales**
 

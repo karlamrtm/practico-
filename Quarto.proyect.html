@@ -542,118 +542,27 @@ edad                  -3.706181e-01  0.040319247  1.0000000000</code></pre>
 </tbody>
 </table>
 </div>
-<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>sjPlot<span class="sc">::</span><span class="fu">tab_corr</span>(proc_datacor, </span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>                 <span class="at">na.deletion =</span> <span class="st">"pairwise"</span>, <span class="co"># espeficicamos tratamiento NA</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>                 <span class="at">triangle =</span> <span class="st">"lower"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output-display">
-<table data-quarto-postprocess="true" class="table table-sm table-striped small">
-<tbody>
-<tr class="odd">
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">&nbsp;</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">conf_inmigr</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">pier_ident_chi</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">aumenta_desempleo</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">iden_clase</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">nivel_educacional</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">sexo</td>
-<td data-quarto-table-cell-role="th" style="font-style: italic; font-weight: normal; border-top: double black; border-bottom: 1px solid black; padding: 0.2cm">edad</td>
-</tr>
-<tr class="even">
-<td style="font-style: italic">conf_inmigr</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="odd">
-<td style="font-style: italic">pier_ident_chi</td>
-<td style="text-align: center; padding: 0.2cm;">-0.361<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="even">
-<td style="font-style: italic">aumenta_desempleo</td>
-<td style="text-align: center; padding: 0.2cm;">-0.343<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">0.589<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="odd">
-<td style="font-style: italic">iden_clase</td>
-<td style="text-align: center; padding: 0.2cm;">0.026<span style="vertical-align:super;font-size:0.8em;">*</span></td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.009<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.004<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="even">
-<td style="font-style: italic">nivel_educacional</td>
-<td style="text-align: center; padding: 0.2cm;">0.257<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">-0.223<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">-0.236<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.000<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="odd">
-<td style="font-style: italic">sexo</td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.020<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm;">0.040<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">0.030<span style="vertical-align:super;font-size:0.8em;">*</span></td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">0.002<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm;">-0.069<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="even">
-<td style="font-style: italic">edad</td>
-<td style="text-align: center; padding: 0.2cm;">-0.124<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">0.085<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">0.112<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm; color: #999999;">-0.000<span style="vertical-align:super;font-size:0.8em;"></span></td>
-<td style="text-align: center; padding: 0.2cm;">-0.371<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">0.040<span style="vertical-align:super;font-size:0.8em;">***</span></td>
-<td style="text-align: center; padding: 0.2cm;">&nbsp;</td>
-</tr>
-<tr class="odd">
-<td colspan="8" style="text-align: right; border-bottom: double black; border-top: 1px solid black; font-style: italic; font-size: 0.9em;">Computed correlation used pearson-method with pairwise-deletion.</td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot.mixed</span>(M)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="fu">corrplot.mixed</span>(M)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <p><img src="Quarto.proyect_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>La estimación de correlaciones de esta investigación indica asociación negativa y positiva entre las variables. En ellas podemos observar una asociación que demuestra que la variable confianza en la inmigración se ve afectada por las demás variables, tanto las que seleccionamos como variables de perjuicio, como las variables sociodemograficas. Si bien no se logro hacer una estimación contundente de las caracteristicas sociodemograficas que tienen quienes desconfian en los inmigrantes, logramos indentificar algunos indicadores relevantes para la investigación. En cuanto a la variable de confianza en inmigrantes, existe una correlación negativa en las variables de perjuicio y edad, con un valor p&lt;0,001***. Existe una asociación positiva entre las variables chile pierde identidad y aumenta desempleo, asimismo se observa una correlación positiva entre quienes tienen mayor escolaridad, es decir, cuentan con estudios de educación superior y postgrados. En tanto la variable de confianza en la inmigración cuenta con una correlación negativa con las variables Chile pierde identidad con un valor de -0.36, y aumenta el desempleo con -0.34; la variable identificación clase social no presenta correlaciones con las demás variables, por lo que no será utilizada para las conclusiones finales. En tanto las variables sociodemograficas de edad, sexo y nivel educacional, demuestran ser significativas para la investigación, ya que nos permiten observar variabilidad en los estadisticos graficados. La edad se correlaciona negativamente con el nivel educacional en -0.37 puntos, mientras que demuestra un leve correlación positiva con las variables de perjuicio, por tanto a medida que aumenta la edad existirian mayores niveles de acuerdo con las variables que seleccionamos como indicadores de perjuicios.</p>
 </section>
 <section id="estimación-de-modelos-de-regresión" class="level2">
 <h2 class="anchored" data-anchor-id="estimación-de-modelos-de-regresión"><strong>Estimación de modelos de regresión</strong></h2>
-<div class="sourceCode cell-code" id="cb14"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>proc_datacor <span class="ot">&lt;-</span> proc_datacor <span class="sc">%&gt;%</span></span>
-<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prejuicio =</span> <span class="fu">sum</span>(pier_ident_chi, aumenta_desempleo))</span>
-<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>fit01<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>iden_clase,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>fit02<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>nivel_educacional ,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-7"><a href="#cb14-7" aria-hidden="true" tabindex="-1"></a>fit03<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>sexo,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-8"><a href="#cb14-8" aria-hidden="true" tabindex="-1"></a>fit04<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>edad,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-9"><a href="#cb14-9" aria-hidden="true" tabindex="-1"></a>fit05<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>nivel_educacional<span class="sc">+</span>iden_clase,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-10"><a href="#cb14-10" aria-hidden="true" tabindex="-1"></a>fit06<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>sexo<span class="sc">+</span>edad,<span class="at">data=</span>proc_datacor)</span>
-<span id="cb14-11"><a href="#cb14-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb14-12"><a href="#cb14-12" aria-hidden="true" tabindex="-1"></a><span class="fu">knitreg</span>(<span class="fu">list</span>(fit01, fit02, fit03, fit04, fit05, fit06))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb13"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a>proc_datacor <span class="ot">&lt;-</span> proc_datacor <span class="sc">%&gt;%</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prejuicio =</span> <span class="fu">sum</span>(pier_ident_chi, aumenta_desempleo))</span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a>fit01<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>iden_clase,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>fit02<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>nivel_educacional ,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a>fit03<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>sexo,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a>fit04<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>edad,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a>fit05<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>nivel_educacional<span class="sc">+</span>iden_clase,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a>fit06<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>sexo<span class="sc">+</span>edad,<span class="at">data=</span>proc_datacor)</span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="fu">knitreg</span>(<span class="fu">list</span>(fit01, fit02, fit03, fit04, fit05, fit06))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;caption-side: bottom;color: #000000;border-top: 2px solid #000000;">
 <caption>
@@ -994,6 +903,8 @@ Num. obs.
 </tfoot>
 
 </table>
+<p>A raíz de los resultados podemos observar que existe un efecto estadisticamente significativo entre</p>
+<p>Modelo 1 Modelo 2 Modelo 3 Modelo 4 Modelo 5 Modelo 6</p>
 </section>
 </section>
 <section id="conclusiones-finales" class="level1">
