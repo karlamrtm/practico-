@@ -78,6 +78,17 @@ graph2
 
 ```
 
+En el grafico anterior se cruzaron las variables 
+
+1.Confianza en inmigrantes (CI)
+
+2.Chile pierde su identidad con la llegada de inmigrantes (CPI)
+
+3.Aumenta el desempleo con la llegada de inmigrantes (ADI)
+
+Podemos a primera vista observar que en general los niveles de confianza en los inmigrantes tienen altos valores en cuanto a las variables CPI y ADI, esto quiere decir que un 33% a 42% de los consultados dice tener bastante confianza en los inmigrantes, frente a un 7% que declara no tener nada de confianza. 
+En cuanto a la variable por si sola CI, se observan mayores niveles de desconfianza, siendo un 24% de los encuestados quienes declaran nada de confianza en los inmigrantes. Sin embargo, un 37% declara tener algo de confianza en los inmigrantes. 
+
 ```{r}
 #| label: fig-gra_asocio
 #| fig-cap: “Edad”

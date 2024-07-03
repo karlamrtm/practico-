@@ -291,6 +291,11 @@ La recodificación de variables y las preguntas de investigación, Los valores d
 </div>
 </div>
 </div>
+<p>En el grafico anterior se cruzaron las variables</p>
+<p>1.Confianza en inmigrantes (CI)</p>
+<p>2.Chile pierde su identidad con la llegada de inmigrantes (CPI)</p>
+<p>3.Aumenta el desempleo con la llegada de inmigrantes (ADI)</p>
+<p>Podemos a primera vista observar que en general los niveles de confianza en los inmigrantes tienen altos valores en cuanto a las variables CPI y ADI, esto quiere decir que un 33% a 42% de los consultados dice tener bastante confianza en los inmigrantes, frente a un 7% que declara no tener nada de confianza. En cuanto a la variable por si sola CI, se observan mayores niveles de desconfianza, siendo un 24% de los encuestados quienes declaran nada de confianza en los inmigrantes. Sin embargo, un 37% declara tener algo de confianza en los inmigrantes.</p>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>graph4 <span class="ot">&lt;-</span> <span class="fu">ggplot</span>(proc_data, <span class="fu">aes</span>(<span class="at">x =</span> <span class="fu">as.numeric</span>(edad))) <span class="sc">+</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_histogram</span>(<span class="at">binwidth=</span><span class="fl">0.6</span>, <span class="at">colour=</span><span class="st">"black"</span>, <span class="at">fill=</span><span class="st">"coral"</span>) <span class="sc">+</span></span>
