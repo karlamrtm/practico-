@@ -91,16 +91,25 @@ En cuanto a la variable por si sola CI, se observan mayores niveles de desconfia
 
 ```{r}
 #| label: fig-gra_asocio
-#| fig-cap: “Edad”
-graph4 <- ggplot(proc_data, aes(x = as.numeric(edad))) +
-  geom_histogram(binwidth=0.6, colour="black", fill="coral") +
+#| fig-cap: “Asociación de variables”
+datos6 <- proc_data %>% group_by(nivel_educacional, sexo, edad_groups) %>% 
+  summarise(promedio = mean(conf_inmigr))
+
+datos6$sexo_n <- as.numeric(datos6$sexo)
+
+graph9 <- ggplot(datos6, aes(x =nivel_educacional, y = promedio, color=sexo_n)) +
+  geom_point() +
+  labs(x = "Nivel Educacional", y = "Confianza en inmigrantes") +
   theme_bw() +
-  xlab("Edad") +
-  ylab("Cantidad")
+  ylim(0, 7) +
+  facet_wrap(~edad_groups) +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
-graph4
-
+graph9
 ```
+
+En el grafico 9, podemos observar la asociación de las variables confianza en inmigrantes, edad en grupos, sexo y nivel educacional. Edad en grupos esta dividida en 4 sub muestras, que se componen por entre 16 y 25 años, entre 26 y 39 años, entre 40 y 65 años, y más de 65 años. Estos se cruzan con la variable sexo, que es 0 hombre y 1 mujer; es necesario mencionar que la variable de sexo cuenta con más del 50% de la muestra en mujeres. Por lo que podriamos deducir que la muestra de mujeres sería más representativa con respecto a la muestra de hombres. 
+En cuanto a las estadisticas reflejadas en el grafico anterior, en general los niveles de confianza se encuentran altos en personas de mayores estudios educacionales. Quienes cuentan con una educación superior o de postgrado entre los 26 y 65 años, reflejan altos niveles de confianza tanto en hombres como mujeres. Mientras que en en el grupo de 16 a 25 años, se observa una diferencia observable entre hombres y mujeres, ya que las mujeres indican tener menos confianza en los inmigrantes en relación a los hombres.
 
 ## **Estimacion de correlaciones**
 ```{r}
