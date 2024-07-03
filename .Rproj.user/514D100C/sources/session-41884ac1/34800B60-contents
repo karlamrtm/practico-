@@ -66,3 +66,10 @@ fit06<- lm(prejuicio~sexo+edad,data=proc_datacor)
 
 knitreg(list(fit01, fit02,fit03))
 knitreg(list(fit01, fit02,fit03, fit04, fit05, fit06))
+
+fit01<- lm(prejuicio~iden_clase,data=proc_datacor)
+fit02<- lm(prejuicio~nivel_educacional ,data=proc_datacor)
+fit03<- lm(prejuicio~sexo,data=proc_datacor)
+fit04<- lm(prejuicio~edad,data=proc_datacor)
+fit05<- lm(prejuicio~nivel_educacional+iden_clase,data=proc_datacor)
+fit06<- lm(prejuicio~sexo+edad,data=proc_datacor)

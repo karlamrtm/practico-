@@ -3,7 +3,7 @@
     "path": "C:/Users/hp/Desktop/Rstudio/practico-/correlaciones.R",
     "project_path": "correlaciones.R",
     "type": "r_source",
-    "hash": "0",
+    "hash": "3591142821",
     "contents": "",
     "dirty": false,
     "created": 1717737688975.0,
@@ -13,15 +13,15 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "42,60",
-        "scrollLine": "33"
+        "cursorPosition": "75,0",
+        "scrollLine": "51"
     },
     "folds": "",
-    "lastKnownWriteTime": 1719955806,
+    "lastKnownWriteTime": 1719968047,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1719955806176,
+    "last_content_update": 1719968047114,
     "read_only": false,
     "read_only_alternatives": []
 }

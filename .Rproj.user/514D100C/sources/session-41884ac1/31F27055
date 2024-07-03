@@ -3,9 +3,9 @@
     "path": "C:/Users/hp/Desktop/Rstudio/practico-1/Quarto.proyect.qmd",
     "project_path": null,
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "262110752",
     "contents": "",
-    "dirty": true,
+    "dirty": false,
     "created": 1719887037285.0,
     "source_on_save": false,
     "relative_order": 5,
@@ -22,11 +22,11 @@
         "rmdVisualModeLocation": "6880:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1719956013,
+    "lastKnownWriteTime": 1719968051,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1719956562108,
+    "last_content_update": 1719968051546,
     "read_only": false,
     "read_only_alternatives": []
 }
