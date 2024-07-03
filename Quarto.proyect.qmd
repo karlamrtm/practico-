@@ -7,7 +7,7 @@ bibliography: Migraciones.bib
 link-citations: true
 ---
 
-# **“**Percepciónes e imaginarios de la migración ante inmigrantes de nacionalidad peruana, haitiana y venezolana a Chile**”** Carpeta practico-github
+# **“**Percepciónes e imaginarios de la migración ante inmigrantes de nacionalidad peruana, haitiana y venezolana a Chile**”**
 
 ## **Introducción:**
 
@@ -147,14 +147,16 @@ knitreg(list(fit01, fit02, fit03, fit04, fit05, fit06))
 
 ```
 
-A raíz de los resultados podemos observar que existe un efecto estadisticamente significativo entre 
+A raíz de los resultados podemos observar que existe un efecto estadisticamente significativo entre las variables con valores de confianza de *** p<0.001; y ** p<0.01. Lo que indica valores de confianza de 99,9% y 95%. Para explicar nuestros modelos en terminos generales, el intercepto es la agrupación de las variables de confianza en inmigrantes, Chile pierde identidad, y aumento del desempleo. Para esto cruzamos catalogadas como sociodemograficas de identificación con la clase social, nivel educacional, sexo y edad.
 
-Modelo 1
-Modelo 2
-Modelo 3
-Modelo 4
-Modelo 5
-Modelo 6
+- En el Modelo 1 podemos observar una baja variación del -0.02 con respecto a la identificación de clase social subjetiva, por lo que descartaremos esta variable como explicativa de nuestros modelos de regresiones. 
+- En el Modelo 2 se identifica que el nivel educacional disminuiría en -0.068 puntos la escala de perjuicios en relación a la migración. 
+- En el Modelo 3 observamos una relación positiva entre el intercepto con 0.16 puntos positivos y con un 99% de confianza, ** p<0.01. Sin embargo este modelo no explicaría la varianza de nuestra variable dependiente. 
+- En el modelo 4 se observa la variable independiente edad, en ella se observa una variabilidad positiva del 0.01***, ello indica que por cada año que aumenta la edad, existe mayor grado de desacuerdo con la inmigración.  
+- En el Modelo 5 podemos observar una relación negativa con identificación de la clase social con un -0.02, y con la variable independiente de nivel educacional con un -0.68***.
+- En el Modelo 6 logramos observar una distribución de la variabilidad de nuestra variable independiente positiva en la variable sexo, de 0.15**, siendo nuestra referencia valor 0 (hombre), y aumentando en 0.15 cuando la muestra es mujer.
+
+El modelo con el que nos quedamos será el modelo 5, ya que explica en un 7% la variabilidad de nuestra variable dependiente, ya que los modelos 2 y 5 logran explicar el 7% de la varianza de la variable dependiente. 
 
 # **Conclusiones Finales**
 
