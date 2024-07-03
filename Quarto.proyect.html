@@ -272,9 +272,8 @@ Variable confianza en los inmigrantes: al menos un 34% de los encuestados declar
 La recodificación de variables y las preguntas de investigación, Los valores de las variables 1, 2 y 3, están de 0 a 4, siendo 0 nada de confianza, y 4 bastante confianza; 2 y 3 con valores de 0 a 4, que indican los grados de acuerdo con la afirmación.</p></li>
 </ol>
 </section>
-</section>
-<section id="graficos-univariados" class="level1">
-<h1>Graficos univariados</h1>
+<section id="graficos-univariados" class="level2">
+<h2 class="anchored" data-anchor-id="graficos-univariados"><strong>Graficos univariados</strong></h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>graph2 <span class="ot">&lt;-</span> sjPlot<span class="sc">::</span><span class="fu">plot_stackfrq</span>(dplyr<span class="sc">::</span><span class="fu">select</span>(proc_data, conf_inmigr,</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>                                              pier_ident_chi,</span>
@@ -310,8 +309,8 @@ La recodificación de variables y las preguntas de investigación, Los valores d
 </div>
 </div>
 </section>
-<section id="estimacion-de-correlaciones" class="level1">
-<h1>Estimacion de correlaciones</h1>
+<section id="estimacion-de-correlaciones" class="level2">
+<h2 class="anchored" data-anchor-id="estimacion-de-correlaciones"><strong>Estimacion de correlaciones</strong></h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>proc_datacor <span class="ot">&lt;-</span> proc_data <span class="sc">%&gt;%</span> <span class="fu">select</span>(conf_inmigr, pier_ident_chi, aumenta_desempleo, iden_clase, nivel_educacional, sexo, edad)<span class="sc">%&gt;%</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate_all</span>(<span class="sc">~</span>(<span class="fu">as.numeric</span>(.)))</span>
@@ -624,8 +623,9 @@ edad                  -3.706181e-01  0.040319247  1.0000000000</code></pre>
 <p><img src="Quarto.proyect_files/figure-html/unnamed-chunk-6-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+</section>
 <section id="estimación-de-modelos-de-regresión" class="level2">
-<h2 class="anchored" data-anchor-id="estimación-de-modelos-de-regresión">Estimación de modelos de regresión</h2>
+<h2 class="anchored" data-anchor-id="estimación-de-modelos-de-regresión"><strong>Estimación de modelos de regresión</strong></h2>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a>proc_datacor <span class="ot">&lt;-</span> proc_datacor <span class="sc">%&gt;%</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>  <span class="fu">rowwise</span>() <span class="sc">%&gt;%</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">prejuicio =</span> <span class="fu">sum</span>(pier_ident_chi, aumenta_desempleo))</span>
@@ -637,7 +637,7 @@ edad                  -3.706181e-01  0.040319247  1.0000000000</code></pre>
 <span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a>fit05<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>nivel_educacional<span class="sc">+</span>iden_clase,<span class="at">data=</span>proc_datacor)</span>
 <span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a>fit06<span class="ot">&lt;-</span> <span class="fu">lm</span>(prejuicio<span class="sc">~</span>sexo<span class="sc">+</span>edad,<span class="at">data=</span>proc_datacor)</span>
 <span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="fu">knitreg</span>(<span class="fu">list</span>(fit01, fit02,fit03, fit04, fit05, fit06))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="fu">knitreg</span>(<span class="fu">list</span>(fit01, fit02, fit03, fit04, fit05, fit06))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <table class="texreg" style="margin: 10px auto;border-collapse: collapse;border-spacing: 0px;caption-side: bottom;color: #000000;border-top: 2px solid #000000;">
 <caption>
@@ -979,11 +979,11 @@ Num. obs.
 
 </table>
 </section>
-<section id="conclusiones-finales" class="level2">
-<h2 class="anchored" data-anchor-id="conclusiones-finales">Conclusiones Finales</h2>
+</section>
+<section id="conclusiones-finales" class="level1">
+<h1><strong>Conclusiones Finales</strong></h1>
 <p>Conclusiones preliminares del trabajo: Es posible plantear a través de la bibliografía consultada que los discursos de odio radican en la otredad, pensarnos como superiores, moral y políticamente deja al otro en un puesto de jerarquización hacia abajo, en el cual no es observado como igual, sino como un otro ajeno, extraño, o inferior a nosotros. Esto tendería a fomentar una percepción negativa de la llegada de migrantes venezolanos a Chile. Sin tomar en consideración los beneficios que esto podría conllevar para el país, como por ejemplo el aumento de trabajadores en edad laboral, o trabajadores en puestos de trabajo que ya no quieren ser tomados por los mismos nacionales, aumento de la natalidad, diversificación cultural. A raíz de algunas conversaciones en cátedra del curso migraciones: desde una mirada interseccional comentan que el aumento de la percepción negativa hacía los migrantes en Chile tiene su fundamento en visones sesgados y promovidas por medios de comunicación que apuntan a señalar a los problemas estructurales de nuestro país, como problemas que suceden principalmente por la llegada de nuevos migrantes. Ejemplo de esto es, aumento en la delincuencia, aumento en los niveles de inseguridad en las calles, disminución de ofertas laborales, entre algunas. Dado esto, considero que los discursos de odio hacia personas de nacionalidad principalmente venezolana serían utilizados como una suerte de chivo expiatorio en nuestro país, hacia problemas de carácter estructural como «aumento del desempleo», «la crisis en seguridad», «la crisis de vivienda», «acceso a la salud pública», y «acceso a la educación pública». Si bien una investigación más amplia podría abordar todos estos fenómenos y las percepciones que tienen tanto ciudadanos locales como ciudadanos extranjeros en el país. En este caso nos limitaremos a hacer una investigación a partir de una revisión de 2 indicadores de percepción de perjuicios presentes en la población encuestada.</p>
 
-</section>
 </section>
 
 <div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
